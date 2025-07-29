@@ -1,0 +1,15 @@
+{
+    "name": "World War 2",
+    "short_name": "WW2",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#00FF00",
+    "icons": [
+        {
+            "src": "images/ironcross.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        }
+    ]
+}

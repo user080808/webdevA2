@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/ironcross.png">
+    <!-- Creating progressive web app -->
+    <title>
+        World War 2
+    </title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <!-- Links to CSS and JS files -->
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div id="mainHeader">
+                <h1 id="mainh1">World War 2</h1>
+                <p id="mainp">The history, the key players, and their strengths and weaknesses</p>
+            </div>
+        </header>
+        <!--Page header and introduction at the top-->
+        <nav>
+            <div class="topicNav">
+                <button id="participants">The participants</button>
+                <button id="history">The timeline</button>
+                <button id="ads">The strength of the Allies</button>
+                <button id="flaws">The weaknesses of the Axis</button>
+                <button id="game">Minigame</button>
+                <button id="btnFS">FullScreen</button>
+                <button id="btnWS">Exit Full Screen</button>
+            </div>
+        </nav>
+    </div>
+    <!--Links to the different topics-->
+    <main>
+        <div id="mainContent">
+            <!--The key leaders of the Axis and Allies in WW2, along with a guessing game for how many nations were in the Allies-->
+            <section>
+                <div class="content" id="players">
+                    <h2>The participants</h2>
+                    <!--The Axis powers-->
+                    <article>
+                        <div id="Axis">
+                            <h3>The Axis powers</h3>
+                            <p class="Axisp">Formed by the Tripartite Pact in 1940, the Axis powers consisted of three
+                                nations, those
+                                being Nazi Germany, Fascist Italy, and the Japanese Empire. They were laregly driven by
+                                expansionist and militaristic ideologies, and sought to change the geopolitical
+                                landscape to shape their interests. They opposed the Allies in World War 2.</p>
+                            <p class="Axisp">The key leaders of the nations were:</p>
+                            <p class="leader">Adolf Hitler, of Nazi Germany</p>
+                            <img src="images/hitler.jpg" alt="Adolf Hitler" title="Adolf Hitler">
+                            <p class="leader">Benito Mussolini, of Fascist Italy</p>
+                            <img src="images/mussolini.jpg" alt="Benito Mussolini" title="Benito Mussolini">
+                            <p class="leader">Emperor Hirohito, of the Japanese Empire</p>
+                            <img src="images/hirohito.jpg" alt="Emperor Hirohito" title="Emperor Hirohito">
+                        </div>
+                    </article>
+                    <!--The Allied powers-->
+                    <article>
+                        <div id="Allies">
+                            <h3>The Allied powers</h3>
+                            <p class="Alliedp">Formed in opposition to the aggresive expansion of the Axis, the Allied
+                                powers had
+                                significantly more nations than the Axis, but the three most powerful were Great
+                                Britain, the United States, and the Soviet Union (Often called the "Big Three"). Some
+                                other significant nations included Australia, India and China.</p>
+                            <p class="Alliedp">The key leaders of the "Big Three" were:</p>
+                            <p class="leader">Winston Churchill, of Great Britain</p>
+                            <img src="images/churchill.jpg" alt="Winston Churchill" title="Winston Churchill">
+                            <p class="leader">Franklin Delano Roosevelt, of the United States</p>
+                            <img src="images/roosevelt.jpg" alt="Franklin Delano Roosevelt"
+                                title="Franklin Delano Roosevelt">
+                            <p class="leader">Joseph Stalin, of the Soviet Union</p>
+                            <img src="images/stalin.jpg" alt="Joseph Stalin" title="Joseph Stalin">
+                        </div>
+                    </article>
+                    <!--Simple guessing game-->
+                    <article>
+                        <p id="quizp">Try and guess how many countries were in the Allied powers:</p>
+                        <div id="quiz">
+                            <label id="smaller">??</label>&lt;
+                            <input type="number" id="guessField">
+                            &lt;<label id="bigger">??</label>
+                            <button id="btnGuess">Guess!</button>
+                            <p id="commentsBox">Guess my number!</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!--A timeline of some of the key battles in WW2-->
+            <section>
+                <div class="content" id="events">
+                    <h2>The timeline</h2>
+                    <!--The Invasion of Poland-->
+                    <article>
+                        <div id="Poland">
+                            <h3 id="polandhead">Invasion of Poland</h3>
+                            <img id="poland" src="images/poland.jpg" alt="poland" title="poland">
+                            <p id="polandp">On September 1 1939, Germany invades Poland, joined by the Soviet Union
+                                (Which was
+                                neutral to Germany at the time due to the Molotov-Ribbentrop Pact, or German-Soviet
+                                Non-Aggression Pact).<br>
+                                Britain and France soon declared war on Germany, marking the start of World War 2 in
+                                Europe.<br>
+                                The Phoney war would soon follow, characterised by a build up and preparation of
+                                military forces.</p>
+                        </div>
+                    </article>
+                    <!--The Fall of France-->
+                    <article>
+                        <div id="France">
+                            <h3 id="francehead">The Battle and Fall of France</h3>
+                            <img id="france" src="images/france.jpg" alt="france" title="france">
+                            <p id="francep">Germany utilises blitzkrieg tactics to conquer Belgium, Luxembourg and
+                                the Netherlands,
+                                before invading France on 10 May 1940.<br>Although France had a larger army and air
+                                force as well as the support of
+                                the British
+                                Expeditionary Force and Royal Air Force (RAF), they were unable to resist the attack and
+                                eventually retreated to Dunkirk where evacuation took place.<br>The Dunkirk evacuation
+                                was successful in rescuing several British and
+                                French soldiers,
+                                while France surrendered on June 22. France became occupied by Germany and Japan
+                                occupies French Indochina in September.</p>
+                        </div>
+                    </article>
+                    <!--The Battle of Britain-->
+                    <article>
+                        <div id="Britain">
+                            <h3 id="britainhead">The Blitz and Battle of Britain</h3>
+                            <img id="britain" src="images/britain.jpg" alt="britain" title="britain">
+                            <p id="britainp">With France defeated, Germany now turned its attention to Britain, with
+                                the German Air
+                                Force (Luftwaffe) carrying out large scale attacks against Britain's RAF in a bid to
+                                achieve air superiority.<br>Later, the Germans turned to bombing British cities in a
+                                campaign known
+                                as the Blitz. It
+                                lasted from September 1940 to May 1941, although bombing continued throughout the war.
+                                <br>Though the Blitz causes huge losses of life and great damage to houses,
+                                docks, warehouses
+                                and factories, the British did not surrender and carried on the war effort.
+                            </p>
+                        </div>
+                    </article>
+                    <!--Operation Barbarossa/Invasion into the Soviet Union-->
+                    <article>
+                        <div id="Barbarossa">
+                            <h3 id="barbarossahead">Operation Barbarossa</h3>
+                            <img id="barbarossa" src="images/barbarossa.jpg" alt="barbarossa" title="barbarossa">
+                            <p id="barbarossap">Violating the Molotov-Ribbentrop Pact, Germany launches a massive
+                                invasion into the
+                                Soviet Union on June 22 1940, drawing away air forces from the Battle of the Atlantic
+                                and land forces from other theatres of war.<br>Although the Germans enjoyed considerable
+                                success in the early stages,
+                                they were unable
+                                to overwhelm the USSR fast enough and were halted by the harsh winter.<br>The Soviets
+                                exploited this advantage to their benefit by reorganising
+                                the Red Army. This
+                                allowed them to better resist the German forces.</p>
+                        </div>
+                    </article>
+                    <!--Attack on Pearl Harbor-->
+                    <article>
+                        <div id="Pearl">
+                            <h3 id="pearlharborhead">Attack on Pearl Harbor</h3>
+                            <img id="pearlharbor" src="images/pearlharbor.jpg" alt="pearlharbor" title="pearlharbor">
+                            <p id="pearlharborp">On December 7 1941, Japan launches a surprise attack on Pearl
+                                Harbor, disabling much of
+                                the US naval fleet stationed there.<br>Over 2,000 American personnel were killed and 18
+                                ships were
+                                destroyed, along with five
+                                battleships. However, Japan did not destroy any aircraft carriers.<br>Roosevelt would
+                                deliver his Day of Infamy speech the next day,
+                                rallying the country and
+                                declaring war on Japan with the United Kingdom. Later on December 11, Germany and Italy
+                                declared war on the United States, even though they had no formal obligation to do so
+                                under the Tripartite Pact.</p>
+                        </div>
+                    </article>
+                    <!--Battle of Midway-->
+                    <article>
+                        <div id="Midway">
+                            <h3 id="midwayhead">The Battle of Midway</h3>
+                            <img id="midway" src="images/midway.jpg" alt="midway" title="midway">
+                            <p id="midwayp">In June 1942, the United States and Japan clashed at the Midway Atoll.
+                                <br>Japan suffered a decisive defeat. They lost four of their aircraft
+                                carriers and nearly
+                                three-quarters of their experienced pilots.<br>With their naval and offensive
+                                capabilities now severely limited, the
+                                United States goes
+                                on the offensive.
+                            </p>
+                        </div>
+                    </article>
+                    <!--Battle of Stalingrad-->
+                    <article>
+                        <div id="Stalingrad">
+                            <h3 id="stalingradhead">The Battle of Stalingrad</h3>
+                            <img id="stalingrad" src="images/stalingrad.jpg" alt="stalingrad" title="stalingrad">
+                            <p id="stalingradp">On July 17 1942, the Germans attacked Stalingrad, with the Soviets
+                                launching a
+                                counterattack on August 1942.<br>The Red Army launches Operation Uranus on November 19
+                                1942, a
+                                counteroffensive to
+                                encircle the German forces. It is successful, and approximately 290,000 troops were
+                                trapped on 23 November 1942.<br>Having exhausted their food and ammunition, the Germans
+                                surrendered
+                                to the Soviets on 2
+                                February 1943, marking the end of the battle. It has been regarded by many to be the
+                                turning point in World War 2.</p>
+                        </div>
+                    </article>
+                    <!--Battle of Kursk-->
+                    <article>
+                        <div id="Kursk">
+                            <h3 id="kurskhead">The Battle of Kursk</h3>
+                            <img id="kursk" src="images/kursk.jpg" alt="kursk" title="kursk">
+                            <p id="kurskp">On July 5 1943, Germany attacks the Soviet city of Kursk, resulting in one
+                                of the largest
+                                tank battles in history.<br>By 23 August 1943 however, the Soviets were able to halt and
+                                counter the
+                                attacks. Hitler
+                                cancels the offensive later, marking a Soviet victory.<br>This was the last major German
+                                offensive on the Eastern Front, with
+                                Germany now on the
+                                defensive and the Soviet Union on the offensive.</p>
+                        </div>
+                    </article>
+                    <!--Operation Overlord/D-day-->
+                    <article>
+                        <div id="Overlord">
+                            <h3 id="overlordhead">Operation Overlord: D-day</h3>
+                            <img id="overlord" src="images/overlord.jpg" alt="overlord" title="overlord">
+                            <p id="overlordp">As the Germans and Soviets fought, the rest of the Allies sought to
+                                liberate France and
+                                open a second front in Europe, codenamed Operation Overlord, also known as
+                                D-day.<br>D-day was chosen to take place on 6 June 1944, at the beaches of
+                                Normandy. It was the
+                                largest amphibious assault and a massive success, owing to overwhelming resources and
+                                effective planning and leadership.<br>From there, the Allies established a foothold in
+                                France and began a
+                                slow crawl to
+                                liberate it from German control.</p>
+                        </div>
+                    </article>
+                    <!--Germany's defeat-->
+                    <article>
+                        <div id="Victory">
+                            <h3 id="victoryhead">Allied victory in Europe</h3>
+                            <img id="victory" src="images/hitlerdead.jpg" alt="hitlerdead" title="hitlerdead">
+                            <p id="victoryp">By January 1945, the Soviets had encircled Berlin, and Germany was on
+                                the verge of total
+                                military collapse.<br>In April 1945, the Soviets launched an offensive into Berlin.
+                                Facing
+                                imminent defeat,
+                                Hitler commits suicide on 30 April 1945.<br>Germany surrenders to the Allies on 8 May
+                                1945, declaring an Allied
+                                victory in Europe.
+                            </p>
+                        </div>
+                    </article>
+                    <!--Japan's defeat-->
+                    <article>
+                        <div id="Bomb">
+                            <h3 id="bombinghead">Atomic bombing and defeat of Japan</h3>
+                            <img id="bombing" src="images/bombing.jpg" alt="bombing" title="bombing">
+                            <p id="bombingp">By May 1945, the Allies had successfully liberated most of Japan's
+                                territory from their
+                                control.<br>The United States then drops an atomic bomb, "Little Boy", on 6 August
+                                1945, over
+                                Hiroshima. A second atomic bomb, "Fat Man", was dropped over Nagasaki on 9 August 1945.
+                                <br>Japan surrenders to the Allies on 14 August 1945, declaring an Allied
+                                victory in the
+                                Asia-Pacific and marking the end of World War 2.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!--Some of strengths of each of the biggest Allied nations that helped to contribute to their victory-->
+            <section>
+                <div class="content" id="strengths">
+                    <h2>The strengths of the Allies</h2>
+                    <!--The US-->
+                    <article>
+                        <div id="US">
+                            <h3>The United States</h3>
+                            <h4>Economic and industrial power</h4>
+                            <img src="images/useconomy.jpg" alt="useconomy" title="useconomy">
+                            <p>Although the United States had vast amounts of resources, it was not ready for war and
+                                its people strongly opposed joining the war. However, the Pearl Harbor attack changed
+                                public opinion and soon the United States quickly mobilised for war.</p>
+                            <p>From May 1942 onwards, the United States supplied the Allies with huge amounts of food,
+                                raw materials, weapons, troops, and other essentials for war. In a summit meeting in
+                                1943, Stalin proposed a toast: "To American production, without which this war would
+                                have been lost."</p>
+                            <p>For the duration of the war, US factories produced 250,000 aircraft, 90,000 tanks,
+                                350 naval destroyers, 200 submarines and 5,600 merchant ships. By 1944, the United
+                                States
+                                was producing almost half of the weapons being made globally - more than twice the
+                                production
+                                of Germany and Japan combined.</p>
+                            <p>During the Battle of the Atlantic, US shipyards constructed cargo ships, called Liberty
+                                ships, to help transport supplies to the Aliies. In 1943, three ships were completed
+                                daily. Soon, the United States was building more ships than the German U-boats could
+                                sink.</p>
+                            <p>In the Asia-Pacific, the United States supplied the Guomindang (GMD) in China with money,
+                                weapons and other aid to fight the Japanese. As the war progressed, resistance movements
+                                across Asia such as the Malayan People's Anti-Japanese Army and Viet Minh would receive
+                                backing
+                                from the United States.</p>
+                            <h4>Island-hopping in the Asia-Pacific</h4>
+                            <img src="images/iwojima.jpg" alt="iwojima" title="iwojima">
+                            <p>By the time the Japanese attacked Pearl Harbor, they had already built up a large empire
+                                in Asia and the Pacific. Even after the United States victory at Midway, the Allies
+                                faced a long and costly campaign against the Japanese and their island strongholds.</p>
+                            <p>Thus, they came up with the idea of Island-hopping. Instead of trying to capture every
+                                single island, the Allies would target weaker, less-defended islands instead which
+                                supplied the stronger islands.</p>
+                            <p>This approach was successful, as the well-defended islands gradually weakened over time.
+                                It allowed the Allies to conserve their resources and manpowers and avoid costly
+                                battles.</p>
+                            <h4>The Atomic Bomb</h4>
+                            <img src="images/atombomb.jpg" alt="atombomb" title="atombomb">
+                            <p>The United States' usage of the atomic bomb was another crucial factor in the Allied
+                                victory. Even though they were winning, Japanese resistance would cost them countless
+                                casualties and recources.</p>
+                            <p>The usage of the atomic bombs without warning swiftly crushed Japanese morale and made
+                                them surrender.</p>
+                        </div>
+                    </article>
+                    <!--Britain-->
+                    <article>
+                        <div id="UK">
+                            <h3>Britain</h3>
+                            <h4>Strategic position and perseverance</h4>
+                            <img src="images/britishperseverance.jpg" alt="britishperseverance"
+                                title="britishperseverance">
+                            <p>When Britain became the last country standing in Europe of 1940, many politicians
+                                believed they should make a deal or an agreement wiht Germany, which could have costed
+                                Britain its military, particularly the Royal Navy.</p>
+                            <p>However, Churchill refused to do so, preferring that Britain conntinues to fight and
+                                resist Germany. This would prove fundamental to Germany's defeat, as Britain's location
+                                was a valuable asset.</p>
+                            <p>Fighting over home ground gave the British the advantage of short flight times and
+                                quicker refuelling and rearming. Britain was also able to tap into their large reserves
+                                of spare parts for repair work, allowing them to replace their losses more quickly than
+                                Germany, which had stretched it supply lines.</p>
+                            <p>The country became a substantial military base. Allied troops from all over the world
+                                such as from Canada, the Carribean and the United States were stationed at Britain,
+                                which made the D-day landings of 1944 and the Allied bombing campaigns against Germany
+                                possible.</p>
+                            <h4>Advanced technology</h4>
+                            <img src="images/radar.jpg" alt="radar" title="radar">
+                            <p>Britain's Royal Air Force (RAF) had excellent fighter aircraft such as the Supermarine
+                                Spitfire and the Hawker Hurricane, which were able to put up a strong fight against
+                                Germany's
+                                newly developed aircraft.</p>
+                            <p>In addition, the British also developed the new technology of radar, which was used to
+                                detect and locate incoming enemy aircraft. This allowed them to detect German air raids
+                                ahead of time, direct aircraft to intercept them, and manage battles effectively.</p>
+                            <h4>Colonial manpower and supplies</h4>
+                            <img src="images/britishempire.jpg" alt="britishempire" title="britishempire">
+                            <p>Britain's survival was instrumental in the war against Japan, as surrendering also meant
+                                giving up its many colonies in Asia and giving Japan much less resistance. As it was,
+                                the Japanese fought the armies and navies of Britain, Australia, New Zealand and around
+                                120,000 African troops from British colonies alongside US troops.</p>
+                            <p>Moreover, the British colonies included India, and its immense manpower and resources.
+                                India contributed over 2.5 million men and a staggering 80% of its wealth to the Allied
+                                war effort.</p>
+                        </div>
+                    </article>
+                    <!--The Soviet Union-->
+                    <article>
+                        <div id="USSR">
+                            <h3>The Soviet Union</h3>
+                            <h4>Reorganisation and reforms</h4>
+                            <img src="images/T34.jpg" alt="T34" title="T34">
+                            <p>When the German invasion was halted by the Russian winter in 1941, Stalin and his
+                                military leaders used the time to reform the Red Army. German tactics were copied over
+                                and new strategies and ideas were implemented.</p>
+                            <p>Officers in the Red Army were given greater freedom to act. Stalin banned Communist Party
+                                officials from interfering with military decisions.</p>
+                            <p>Specialist tank armies and air force were created, along with the invention and
+                                development of new weapons such as the T-34 tank, which could be mass produced.</p>
+                            <p>Harsh discipline was used. For example, Stalin issued Order 227 in July 1942, known as
+                                "Not a step back". The army was ordered to fight and die for every bit of Russian soil.
+                            </p>
+                            <p>Radios were put into tanks and aircraft to enable better communication. Specialist units
+                                were also created to listen in and disrupt German radio signals.</p>
+                            <h4>The Soviet War Economy</h4>
+                            <img src="images/sovietwareconomy.jpg" alt="sovietwareconomy" title="sovietwareconomy">
+                            <p>To ensure production kept up with the high demand, harsh measure were enacted. Adults
+                                received no food unless they contributed to the war effort in any way. Forced labour was
+                                used and the secret police kept close control of the population.</p>
+                            <p>This enabled the Soviet Union to produce vast amounts of weapons, with production
+                                surpassing Germany in 1942. By 1943, the Soviets were producing one and a half times as
+                                many aircraft and twice as many tanks as Germany.</p>
+                            <p>The Soviets also shifted its major industrial complexes away to the Urals, Siberia and
+                                Kazakhstan. Twenty-five million workers were forced to migrate east which would later
+                                contribute to the increased war production.</p>
+                            <h4>Contributing to the Asia-Pacific Theatre of War</h4>
+                            <img src="images/sovietmanchuria.jpg" alt="sovietmanchuria" title="sovietmanchuria">
+                            <p>After the defeat of Germany, the Soviet Union declared war on Japan and invaded
+                                Manchuria, as agreed at the Tehran Conference and Yalta Conference.</p>
+                            <p>The Soviets were able to defeat the Kwantung army at Manchuria and occupy northern Korea,
+                                which contributed to Japan's decision to surrender to the Allies.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!--How the Axis blundered in many ways that contributed to their loss-->
+            <section>
+                <div class="content" id="weaknesses">
+                    <h2>The weaknesses of the Axis</h2>
+                    <!--Germany-->
+                    <article>
+                        <div id="Germany">
+                            <h3>Germany</h3>
+                            <h4>Hitler's mistakes</h4>
+                            <img src="images/germanpow.jpg" alt="germanpow" title="germanpow">
+                            <p>Over the course of the war, the Germans made several critical mistakes, largely due to an
+                                inefficient command structure. German commanders had to constantly report back to Hitler
+                                who regularly intervened in military decisions.</p>
+                            <p>While hitler may be a shrewd politician, he was never a senior military commander and had
+                                very little command experience, let alone any at the highest level.</p>
+                            <p>One key mistake was during the Dunkirk evacuation. Hitler ordered his panzer divisions to
+                                halt their advance to the evacuating British Expeditionary Force and French army. This
+                                gave the British and French troops ample time to evacuate to Britain, which was
+                                crucial for British morale.</p>
+                            <p>Hitler would blunder again when he placed Germany in a two-front war, by failing to
+                                defeat Britain yet proceeding to invade the Soviet Union.</p>
+                            <p>This prevented him from concentrating his efforts and resources on a single front,
+                                causing the military to be stretched thin and gradually worn down by the Allies.</p>
+                            <p>Another key mistake was the battle of Stalingrad. As the Soviets stubbornly resisted the
+                                Germans, many commanders wanted to withdraw, as the city was ot particularly valuable
+                                from a strategic point of view.</p>
+                            <p>However, Hitler overruled them. To Hitler, taking Stalingrad was a matter of pride, as
+                                the city was named after Stalin. As a result, he committed countless troops to a
+                                pointless battle that was eventually lost.</p>
+                            <p>Furthermore, Hitler erroneously decided to declare war on the United States, even though
+                                he had no obligation to do so under the terms of the Tripartite Pact.</p>
+                            <p>This would bring the United States, which was previously neutral, into the European
+                                theatre of war. Germany would now have to contend with the immsense resources and
+                                military might brought about by one of the most industiralised countries in the world.
+                            </p>
+                            <h4>Poor planning</h4>
+                            <img src="images/bismarcksinking.jpg" alt="bismarcksinking" title="bismarcksinking">
+                            <p>In addition to Hitler's mistakes, the Germans also failed to plan well in their land,
+                                air, and naval powers.</p>
+                            <p>In terms of land power, the Germans overengineered their tanks. While they were more
+                                advanced and powerful than Allied tanks, they were also overcomplicated, unreliable, and
+                                were difficult to mass produce and maintain. Allied
+                                tanks on the other hand, such as the T-34 and M4 Sherman, were made for mass production,
+                                reliability and ease of use. This meant the Allies could easily replace their losses,
+                                while the Germans could not.</p>
+                            <p>In terms of naval power, the Germans were highly effective in their usage of U-boats.
+                                However, their usage of surface ships was much less so. They entered the war with a
+                                largely weak and incomplete naval fleet compared to Britain's Royal Navy, and put too
+                                many resources into building huge battleships such as the Bismarck which were quickly
+                                disabled early into the
+                                war. They also failed to build aircraft carriers which the US and Japan used to dominate
+                                the seas.</p>
+                            <p>In terms of air power, the Germans never made heavy bombers such as the RAF's Lancaster
+                                or the US' B-17. They stuck to medium bombers such as the Heinkel He 111 which were
+                                largely inferior in terms of the damage range they had. While they also had a wide
+                                variety of aircraft produced, this caused inefficient supply lines and a shortage of
+                                spare parts, in addition to their inefficient supply of oil and failure to invest in
+                                radar technology. These problems would plague the Luftwaffe later in the war.</p>
+                        </div>
+                    </article>
+                    <!--Japan-->
+                    <article>
+                        <div id="Japan">
+                            <h3>Japan</h3>
+                            <h4>Interservice rivalry vetween the Army and Navy</h4>
+                            <img src="images/ijaijn.jpg" alt="ijaijn" title="ijaijn">
+                            <p>Even before the war, the Imperial Japanese Army (IJA) and Imperial Japanese Navy (IJN)
+                                had a long-standing conflict and rivalry with each other. Both had different strategies
+                                and ideas on how to seize territory and resources for the Empire, with the IJA
+                                prioritising northern expansion into China and the USSR, and the IJN prioritising
+                                southern expansion into the Dutch East Indies and the Pacific.</p>
+                            <p>When war broke out, the rivalry prevented the IJN and IJA from sharing resources and
+                                exchanging military intelligence, much less coordinate attacks and defences against the
+                                Allies. In addition, their refusal to cooperate caused them to manufacture their own air
+                                force. This meant the already weak Japanese economy was wasting even more resources
+                                building two different sets of equipment for the Army's air force and the Navy's air
+                                force.</p>
+                            <p>Instances of their rivalry included the IJA's refusal to provide troop support to the IJN
+                                for an invasion of Australia, and the IJA's refusal to commit major reinforcements to
+                                the Pacific Islands. Both sides also disagreed on where to set Japan's defensive
+                                perimeter against the Allied forces.</p>
+                            <h4>Overstretched empire</h4>
+                            <img src="images/japanoverstretch.jpg" alt="japanoverstretch" title="japanoverstretch">
+                            <p>Although Japan managed to acquire vast amounts of territory and resources, they were
+                                unable to effectively utilise them due to several reasons.</p>
+                            <p>One of those reasons was how spread out the Empire was. In many areas, rail and road
+                                communications were poor, resulting in difficulty delivering raw materials and workers
+                                efficiently to the required places.</p>
+                            <p>It also meant that resources had to be transported by sea, which was much more
+                                challenging and risky. This made the Japanese highly-suspectible to the island-hopping
+                                strategy employed by the Allies, which allowed them to establish bases on key islands
+                                while draining the resources of other ones.</p>
+                            <h4>Poor planning</h4>
+                            <img src="images/yamato.jpg" alt="yamato" title="yamato">
+                            <p>Much like Germany, Japan failed to plan properly for their military. In particular, they
+                                failed to understand that war at sea had changed.</p>
+                            <p>While Japan managed to damage US battleships at Pearl Harbour, they did not destroy any
+                                aircraft carriers which contributed to the US' quick recovery from the attack.</p>
+                            <p>Although Japan built aircraft carriers and trained naval pilots, they were extremely slow
+                                in doing so, resulting in an irreplaceble carrier fleet that was lost at Midway. Similar
+                                to Germany as well, they overinvested in battleships such as the Yamato which ate up
+                                huge amounts of resources yet achieved little and were quickly sunk.</p>
+                            <p>They were also unable to utilise their submarines effectively. They mostly used them to
+                                attack battleships instead of merchant ships, which were much more easier targets and a
+                                major opportunity to target the Allied supply lines. The Allies on the other hand,
+                                targeted Japanese merchant ships as well along with their navy.</p>
+                            <p>This resulted in a huge reduction of Japan's merchant fleet, reduced to one-ninth of its
+                                pre-Pearl Harbor capacity by the time they surrendered, and only half of the supplies
+                                shipped out was received by their defences, starving and weakening them until they were
+                                easy pickings.</p>
+                            <h4>Lack of local support</h4>
+                            <img src="images/vietminh.jpg" alt="vietminh" title="vietminh">
+                            <p>The Japanese also failed to properly use their empire to the fullest, due to their brutal
+                                treatment of the peoples they conquered. Locals were abused and thousands were forced
+                                into slave labour. Millions of civilians died under Japanese rule.</p>
+                            <p>As a result, the locals rebelled against their rule in any way they could, with many
+                                joining large-scale resistance movements across their home countries.</p>
+                            <p>Examples include Mao Zedong's Chinese Communist Party in China, Ho Chi Minh's Viet Minh
+                                in Vietnam, and the Malayan People's Anti-Japanese Army in Malaya. These groups mostly
+                                fought using guerrilla warfare and were effective in harassing Japanese forces,
+                                disrupting supply lines and engaging in sabotage.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!--Minigame-->
+            <footer>
+                <div class="content" id="minigame">
+                    <h1>WW2 simulator</h1>
+                    <p>Hold out against the invading Germans until exfil can arrive!</p>
+                    <h2 id="scoreBox">Score: 0</h2>
+                    <h3 id="timerBox">Time until extraction: 60</h3>
+                    <button id="startGame">Start!</button>
+                    <div id="gameBox">
+                        <div class="enemy-default" id="enemyId"></div>
+                    </div>
+                    <img id="qrcode" src="images/mobilecode.png" alt="mobilecode">
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>
