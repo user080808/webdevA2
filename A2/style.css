@@ -47,6 +47,8 @@ button {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 5px;
+    border-color: black;
+    color: black;
     font-size: 50px;
     appearance: none;
 }
@@ -334,6 +336,8 @@ h3 {
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 5px;
+        border-color: black;
+        color: black;
         font-size: 25px;
         appearance: none;
     }
